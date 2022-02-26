@@ -5,7 +5,9 @@ from PyQt5.QtWidgets import QTableView,QTableWidget,QTableWidgetItem
 from PyQt5.QtWidgets import QMessageBox
 from PyQt5.uic import loadUi
 from PyQt5.QtSql import QSqlDatabase, QSqlQueryModel, QSqlQuery
-import sqlite3 
+import sqlite3
+
+from ui.MainWindow import MainWindow
 
 
 def createConnection():
@@ -41,7 +43,7 @@ class Login(QDialog):
             msg.setText(my_message)
             x= msg.exec_() 
         else: 
-            connection = sqlite3.connect("csdl.db")
+            connection = sqlite3.connect("db/csdl.db")
             sql = "SELECT * FROM users WHERE username=\'" + username + "\' AND password=\'" + password + "\'"
             cursor = connection.execute(sql)
             list = []
