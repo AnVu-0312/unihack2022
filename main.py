@@ -10,7 +10,7 @@ import sqlite3
 
 def createConnection():
     con = QSqlDatabase.addDatabase("QSQLITE")
-    con.setDatabaseName("csdl.db")
+    con.setDatabaseName("db\csdl.db")
     if not con.open():
         QMessageBox.critical(
             None,
@@ -23,7 +23,7 @@ def createConnection():
 class Login(QDialog):
     def __init__(self):
         super(Login,self).__init__()
-        loadUi("login.ui",self)
+        loadUi("ui\login\login.ui",self)
         self.loginbutton.clicked.connect(self.loginfunction)
         self.password.setEchoMode(QtWidgets.QLineEdit.Password)
         self.createaccbutton.clicked.connect(self.gotocreate)
@@ -31,10 +31,10 @@ class Login(QDialog):
         self.quitbutton.clicked.connect(self.quit_program)
         
     def loginfunction(self):
-        email = self.email.text()
+        username = self.username.text()
         password = self.password.text()
         #Do not let username and password leave blank
-        if email == "" or password =="":
+        if username == "" or password =="":
             msg = QMessageBox()
             msg.setWindowTitle("Error")
             my_message = "Please fill in username and password"
@@ -42,7 +42,7 @@ class Login(QDialog):
             x= msg.exec_() 
         else: 
             connection = sqlite3.connect("csdl.db")
-            sql = "SELECT * FROM users WHERE username=\'" + email + "\' AND password=\'" + password + "\'"
+            sql = "SELECT * FROM users WHERE username=\'" + username + "\' AND password=\'" + password + "\'"
             cursor = connection.execute(sql)
             list = []
             for row in cursor:
@@ -73,5 +73,19 @@ class Login(QDialog):
     def quit_program(self):        
         sys. exit() 
 
+app = QApplication(sys.argv)
+if not createConnection():
+    msg = QMessageBox()
+    msg.setWindowTitle("Error in opening data source!")
+    my_message = "Could not open the data source. The program wil be closed! "  
+    msg.setText(my_message)
+    x= msg.exec_()
+    sys.exit(1)
 
-print("test")
+logindialog = Login()
+widget = QtWidgets.QStackedWidget()
+widget.addWidget(logindialog)
+widget.setFixedWidth(600)
+widget.setFixedHeight(550)
+widget.show()
+app.exec_()

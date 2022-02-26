@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>569</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(54, 54, 54);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="thismonthcostlabel">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>90</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>1m cost</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="thisweekincomelabel">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>140</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>1w income</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="thismonthincomelabel">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>90</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>1m income</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="totalbalancelabel">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>40</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Current total balance:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="thismonthlabel">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>90</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Last month</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="thisweeklabel">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>140</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Last week</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="totalvaluelabel">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>40</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>Total balance</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="thisweekcostlabel">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>140</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 127);</string>
+    </property>
+    <property name="text">
+     <string>1w cost</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>569</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <widget class="QMenu" name="menuCheckIt">
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Application</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuDataManagement">
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Data Management</string>
+    </property>
+    <addaction name="actionImportExcelFile"/>
+    <addaction name="separator"/>
+    <addaction name="actionInputIncome_2"/>
+    <addaction name="actionInputExpense_2"/>
+   </widget>
+   <widget class="QMenu" name="menuFinance_Analysis">
+    <property name="title">
+     <string>Finance Analysis</string>
+    </property>
+   </widget>
+   <addaction name="menuCheckIt"/>
+   <addaction name="menuDataManagement"/>
+   <addaction name="menuFinance_Analysis"/>
+  </widget>
+  <action name="actionCategories">
+   <property name="text">
+    <string>Categories</string>
+   </property>
+  </action>
+  <action name="actionChecklist_Types">
+   <property name="text">
+    <string>Checklist Types</string>
+   </property>
+  </action>
+  <action name="actionTemporary_Saved_Checklists">
+   <property name="text">
+    <string>Temporary Saved Checklists</string>
+   </property>
+  </action>
+  <action name="actionFilledout_Checklists">
+   <property name="text">
+    <string>Filledout Checklists</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionImportExcelFile">
+   <property name="text">
+    <string>ImportExcelFile</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionInputIncome">
+   <property name="text">
+    <string>Checklists</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionInputIncome_2">
+   <property name="text">
+    <string>Input Income</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionFilledout_Checlists">
+   <property name="text">
+    <string>Filledout Checlists</string>
+   </property>
+  </action>
+  <action name="actionInputExpense_2">
+   <property name="text">
+    <string>Input Expense</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionUsers">
+   <property name="text">
+    <string>Users</string>
+   </property>
+  </action>
+  <action name="actionInputExpense">
+   <property name="text">
+    <string>Users</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
