@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>586</width>
+    <width>570</width>
     <height>788</height>
    </rect>
   </property>
@@ -21,7 +21,7 @@
     <property name="geometry">
      <rect>
       <x>370</x>
-      <y>90</y>
+      <y>70</y>
       <width>131</width>
       <height>51</height>
      </rect>
@@ -38,7 +38,7 @@ color: rgb(196, 77, 86);</string>
     <property name="geometry">
      <rect>
       <x>210</x>
-      <y>140</y>
+      <y>120</y>
       <width>151</width>
       <height>51</height>
      </rect>
@@ -55,7 +55,7 @@ color: rgb(147, 250, 165);</string>
     <property name="geometry">
      <rect>
       <x>210</x>
-      <y>90</y>
+      <y>70</y>
       <width>151</width>
       <height>51</height>
      </rect>
@@ -72,7 +72,7 @@ color: rgb(147, 250, 165);</string>
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>40</y>
+      <y>20</y>
       <width>211</width>
       <height>51</height>
      </rect>
@@ -89,7 +89,7 @@ color: rgba(0, 0, 0,255);</string>
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>90</y>
+      <y>70</y>
       <width>131</width>
       <height>51</height>
      </rect>
@@ -106,7 +106,7 @@ color: rgba(0,0,0,255);</string>
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>140</y>
+      <y>120</y>
       <width>141</width>
       <height>51</height>
      </rect>
@@ -123,7 +123,7 @@ color: rgba(0,0,0,255);</string>
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>40</y>
+      <y>20</y>
       <width>131</width>
       <height>51</height>
      </rect>
@@ -140,7 +140,7 @@ color: rgb(245, 230, 83);</string>
     <property name="geometry">
      <rect>
       <x>370</x>
-      <y>140</y>
+      <y>120</y>
       <width>141</width>
       <height>51</height>
      </rect>
@@ -156,10 +156,10 @@ color: rgb(196, 77, 86);</string>
    <widget class="QTableWidget" name="tableWidgetInformation">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>240</y>
-      <width>521</width>
-      <height>241</height>
+      <x>10</x>
+      <y>230</y>
+      <width>551</width>
+      <height>231</height>
      </rect>
     </property>
     <column>
@@ -191,7 +191,7 @@ color: rgb(196, 77, 86);</string>
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>210</y>
+      <y>190</y>
       <width>121</width>
       <height>23</height>
      </rect>
@@ -209,7 +209,7 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>340</x>
-      <y>210</y>
+      <y>190</y>
       <width>151</width>
       <height>23</height>
      </rect>
@@ -230,7 +230,7 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>560</y>
+      <y>530</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -256,7 +256,7 @@ color: rgb(0, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>380</x>
-      <y>650</y>
+      <y>620</y>
       <width>111</width>
       <height>31</height>
      </rect>
@@ -275,7 +275,7 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>560</y>
+      <y>530</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -292,7 +292,7 @@ color: rgb(0, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>590</y>
+      <y>560</y>
       <width>91</width>
       <height>51</height>
      </rect>
@@ -312,7 +312,7 @@ color: rgb(0, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>590</y>
+      <y>560</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -332,7 +332,7 @@ color: rgb(0, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>150</x>
-      <y>650</y>
+      <y>620</y>
       <width>111</width>
       <height>31</height>
      </rect>
@@ -351,7 +351,7 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>600</y>
+      <y>570</y>
       <width>121</width>
       <height>31</height>
      </rect>
@@ -401,7 +401,7 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>600</y>
+      <y>570</y>
       <width>121</width>
       <height>31</height>
      </rect>
@@ -451,7 +451,7 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>560</y>
+      <y>530</y>
       <width>121</width>
       <height>31</height>
      </rect>
@@ -465,7 +465,7 @@ color: rgb(243, 243, 243);</string>
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>560</y>
+      <y>530</y>
       <width>121</width>
       <height>31</height>
      </rect>
@@ -488,7 +488,7 @@ color: rgb(243, 243, 243);</string>
     <property name="geometry">
      <rect>
       <x>90</x>
-      <y>510</y>
+      <y>480</y>
       <width>191</width>
       <height>31</height>
      </rect>
@@ -505,7 +505,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>300</x>
-      <y>510</y>
+      <y>480</y>
       <width>131</width>
       <height>31</height>
      </rect>
@@ -522,8 +522,8 @@ color: rgb(243, 243, 243);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>586</width>
-     <height>27</height>
+     <width>570</width>
+     <height>34</height>
     </rect>
    </property>
    <property name="font">
