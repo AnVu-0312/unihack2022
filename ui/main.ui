@@ -516,11 +516,11 @@ color: rgb(243, 243, 243);</string>
     </property>
     <addaction name="actionShowIncomebyMonth"/>
     <addaction name="actionShowIncomebyType"/>
+    <addaction name="separator"/>
     <addaction name="actionShowExpensebyMonth"/>
     <addaction name="actionShowExpensebyType"/>
     <addaction name="separator"/>
     <addaction name="actionShowIncomeExpense"/>
-    <addaction name="actionInput_Expected_Saving"/>
    </widget>
    <addaction name="menuCheckIt"/>
    <addaction name="menuFinance_Analysis"/>
