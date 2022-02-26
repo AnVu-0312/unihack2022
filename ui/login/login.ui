@@ -72,24 +72,6 @@ border-top-left-radius: 50px;
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>30</y>
-      <width>280</width>
-      <height>430</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgba(0,0,0, 80);
-border-top-left-radius: 50px;
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QLabel" name="background">
     <property name="geometry">
      <rect>
@@ -207,7 +189,7 @@ padding-bottom: 7px;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 255, 255);
+     <string notr="true">
 color: rgb(0, 0, 0);
 font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
@@ -225,7 +207,7 @@ font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 255, 255);
+     <string notr="true">
 color: rgb(0, 0, 0);
 font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
@@ -243,7 +225,7 @@ font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 255, 255);
+     <string notr="true">
 font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
@@ -261,13 +243,42 @@ font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(85, 255, 255);
+
 color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>Quit</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>280</width>
+      <height>430</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,80 );
+border-top-left-radius: 50px;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>label_5</zorder>
+   <zorder>background</zorder>
+   <zorder>label_4</zorder>
+   <zorder>username</zorder>
+   <zorder>password</zorder>
+   <zorder>createaccount</zorder>
+   <zorder>createaccbutton</zorder>
+   <zorder>forgotpassword</zorder>
+   <zorder>loginbutton</zorder>
+   <zorder>quitbutton</zorder>
   </widget>
  </widget>
  <resources>
