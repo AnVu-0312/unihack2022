@@ -439,8 +439,11 @@ class MainWindow(QMainWindow):
         self.incometype.show()
         self.buttonAddIncome.show()
 
-        self.labelCost.show()
-        # self.label.
+        self.labelCost.hide()
+        self.labelCostType.hide()
+        self.cost.hide()
+        self.costtype.hide()
+        self.buttonAddCost.hide()
 
 
     def loadExpense(self): 
