@@ -567,7 +567,7 @@ class MainWindow(QMainWindow):
 
     def add_income(self):
         self.setWindowTitle("Add income interface")
-        self.count = self.count + 1 # this is incrementing counter
+        #self.count = self.count + 1 # this is incrementing counter
         
         currentDay = str(datetime.now().day)
         if len(currentDay)==1:
@@ -622,8 +622,8 @@ class MainWindow(QMainWindow):
             x= msg.exec_()     
              
     def add_cost(self):
-        self.setWindowTitle("Add cost interface")
-        self.count = self.count + 1 # this is incrementing counter
+        self.setWindowTitle("Add expense interface")
+        #self.count = self.count + 1 # this is incrementing counter
         
         currentDay = str(datetime.now().day)
         if len(currentDay)==1:
