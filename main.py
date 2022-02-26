@@ -1,5 +1,11 @@
+import colorsys
+from ctypes.wintypes import HBRUSH
+import os
 import sys
-from PyQt5 import QtWidgets
+import tkinter
+from tkinter.filedialog import askopenfilename
+from unicodedata import category
+from PyQt5 import QtWidgets, QtGui
 from PyQt5.QtWidgets import QDialog,QApplication,QMainWindow
 from PyQt5.QtWidgets import QTableView,QTableWidget,QTableWidgetItem
 from PyQt5.QtWidgets import QMessageBox
@@ -7,8 +13,9 @@ from PyQt5.uic import loadUi
 from PyQt5.QtSql import QSqlDatabase, QSqlQueryModel, QSqlQuery
 import sqlite3
 
-from ui.MainWindow import MainWindow
 
+
+from ui.utilities import get_list
 
 def createConnection():
     con = QSqlDatabase.addDatabase("QSQLITE")
@@ -28,8 +35,6 @@ class Login(QDialog):
         loadUi("ui\login\login.ui",self)
         self.loginbutton.clicked.connect(self.loginfunction)
         self.password.setEchoMode(QtWidgets.QLineEdit.Password)
-        self.createaccbutton.clicked.connect(self.gotocreate)
-        self.forgotpassword.clicked.connect(self.resetpass)
         self.quitbutton.clicked.connect(self.quit_program)
         
     def loginfunction(self):
@@ -60,17 +65,7 @@ class Login(QDialog):
                 msg.setWindowTitle("Failed attempt!")
                 my_message = "Please check your username and password" 
                 msg.setText(my_message)
-                x= msg.exec_()
-
-    def gotocreate(self):
-        createacc=CreateAcc()
-        widget.addWidget(createacc)
-        widget.setCurrentIndex(widget.currentIndex()+1)
-
-    def resetpass(self):
-        resetpass = Resetpass()
-        widget.addWidget(resetpass)
-        widget.setCurrentIndex(widget.currentIndex()+1)
+                x = msg.exec_()
         
     def quit_program(self):        
         sys. exit() 
@@ -81,11 +76,47 @@ class MainWindow(QMainWindow):
         loadUi("ui\main.ui",self)
         self.update()
         self.actionQuit.triggered.connect(self.quit_program)
-        self.actionImportExcelFile.triggered.connect(self.ImportExcelFile)
-        self.actionInputIncome_2.triggered.connect(self.InputIncome)
-        self.actionInputExpense_2.triggered.connect(self.InputExpense)
-        self.actionInput_Expected_Saving.triggered.connect(self.Input_Expected_Saving)
+        # self.actionImportExcelFile.triggered.connect(self.ImportExcelFile)
+        # self.actionInputIncome_2.triggered.connect(self.InputIncome)
+        # self.actionInputExpense_2.triggered.connect(self.InputExpense)
+        # self.actionInput_Expected_Saving.triggered.connect(self.Input_Expected_Saving)
+        self.buttonIncome.clicked.connect(self.loadIncome)
+        self.buttonExpense.clicked.connect(self.loadExpense)
+        self.loadTableData()
+
     
+    def loadTableData(self): 
+        self.tableWidgetInformation.setColumnWidth(0, 120)
+        self.tableWidgetInformation.setColumnWidth(1, 120)
+        self.tableWidgetInformation.setColumnWidth(2, 120)
+        self.loadIncome()
+
+
+    
+    def loadIncome(self): 
+        sql = "SELECT * FROM incomes ORDER BY date DESC"
+        self.loadData(sql)
+
+    def loadExpense(self): 
+        sql = "SELECT * FROM costs ORDER BY date DESC"
+        self.loadData(sql)
+
+    def loadData(self, sql): 
+        list = get_list(sql)
+        count = len(list)
+        self.tableWidgetInformation.setRowCount(count)
+        white = QtGui.QBrush(QtGui.QColor("white"))
+        for row in range(count): 
+            category = QtWidgets.QTableWidgetItem(list[row][2])
+            category.setForeground(white)
+            amount = QtWidgets.QTableWidgetItem(str(list[row][1]))
+            amount.setForeground(white)
+            date = QtWidgets.QTableWidgetItem(str(list[row][0]))
+            date.setForeground(white)
+            self.tableWidgetInformation.setItem(row, 0, date)
+            self.tableWidgetInformation.setItem(row, 1, category)
+            self.tableWidgetInformation.setItem(row, 2, amount)
+
     def update(self):
         connection = sqlite3.connect("db\csdl.db")
         
