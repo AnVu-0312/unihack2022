@@ -184,55 +184,6 @@ padding-bottom: 7px;</string>
      <string>Password</string>
     </property>
    </widget>
-   <widget class="QLabel" name="createaccount">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>360</y>
-      <width>211</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Don't have account yet?</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="createaccbutton">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>360</y>
-      <width>51</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 255, 255);
-color: rgb(0, 0, 0);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
-    </property>
-    <property name="text">
-     <string>Sign up</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="forgotpassword">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>320</y>
-      <width>151</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 255, 255);
-color: rgb(0, 0, 0);
-font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
-    </property>
-    <property name="text">
-     <string>Forgot your password?</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="loginbutton">
     <property name="geometry">
      <rect>

@@ -86,6 +86,7 @@ class MainWindow(QMainWindow):
         super(MainWindow,self).__init__()
         loadUi("ui\main.ui",self)
         self.update()
+
         self.actionQuit.triggered.connect(self.Quit)
         self.actionImportExcelFile.triggered.connect(self.ImportExcelFile)
         self.actionInputIncome_2.triggered.connect(self.InputIncome)
@@ -96,6 +97,10 @@ class MainWindow(QMainWindow):
         self.actionShowExpensebyMonth.triggered.connect(self.cost_bymonth)
         self.actionShowExpensebyType.triggered.connect(self.cost_bytype)
         self.actionShowIncomeExpense.triggered.connect(self.compare_incomecost)
+
+        self.buttonIncome.clicked.connect(self.loadIncome)
+        self.buttonExpense.clicked.connect(self.loadExpense)
+        self.loadTableData()
     
     def income_bymonth(self):
         def on_pick_bar(event):
@@ -412,6 +417,39 @@ class MainWindow(QMainWindow):
         # showing the plot 
         plt.ion()
         plt.show()
+
+    
+    def loadTableData(self): 
+        self.tableWidgetInformation.setColumnWidth(0, 120)
+        self.tableWidgetInformation.setColumnWidth(1, 120)
+        self.tableWidgetInformation.setColumnWidth(2, 120)
+        self.loadIncome()
+
+
+    
+    def loadIncome(self): 
+        sql = "SELECT * FROM incomes ORDER BY date DESC"
+        self.loadData(sql)
+
+    def loadExpense(self): 
+        sql = "SELECT * FROM costs ORDER BY date DESC"
+        self.loadData(sql)
+
+    def loadData(self, sql): 
+        list = get_list(sql)
+        count = len(list)
+        self.tableWidgetInformation.setRowCount(count)
+        white = QtGui.QBrush(QtGui.QColor("white"))
+        for row in range(count): 
+            category = QtWidgets.QTableWidgetItem(list[row][2])
+            category.setForeground(white)
+            amount = QtWidgets.QTableWidgetItem(str(list[row][1]))
+            amount.setForeground(white)
+            date = QtWidgets.QTableWidgetItem(str(list[row][0]))
+            date.setForeground(white)
+            self.tableWidgetInformation.setItem(row, 0, date)
+            self.tableWidgetInformation.setItem(row, 1, category)
+            self.tableWidgetInformation.setItem(row, 2, amount)
 
     def update(self):
         connection = sqlite3.connect("db\csdl.db")
