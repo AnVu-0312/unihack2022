@@ -449,6 +449,20 @@ class MainWindow(QMainWindow):
     def loadExpense(self): 
         sql = "SELECT * FROM costs ORDER BY date DESC"
         self.loadData(sql)
+        
+        self.labelCost.show()
+        self.labelCostType.show()
+        self.cost.show()
+        self.costtype.show()
+        self.buttonAddCost.show()
+
+
+        
+        self.labelIncome.hide()
+        self.labelIncomeType.hide()
+        self.income.hide()
+        self.incometype.hide()
+        self.buttonAddIncome.hide()
 
     def loadData(self, sql): 
         list = get_list(sql)
