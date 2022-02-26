@@ -539,6 +539,9 @@ color: rgb(243, 243, 243);</string>
       <pointsize>12</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white</string>
+    </property>
     <property name="title">
      <string>Application</string>
     </property>
@@ -546,6 +549,9 @@ color: rgb(243, 243, 243);</string>
     <addaction name="actionQuit"/>
    </widget>
    <widget class="QMenu" name="menuFinance_Analysis">
+    <property name="styleSheet">
+     <string notr="true">background-color: white</string>
+    </property>
     <property name="title">
      <string>Finance Analysis</string>
     </property>
