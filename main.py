@@ -556,10 +556,10 @@ class MainWindow(QMainWindow):
                 x= msg.exec_()
 
 
-    def update_data(self):
-        adddata=AddData()
-        widget.addWidget(adddata)
-        widget.setCurrentIndex(widget.currentIndex()+1)
+    #def update_data(self):
+    #    adddata=AddData()
+    #    widget.addWidget(adddata)
+    #    widget.setCurrentIndex(widget.currentIndex()+1)
     
 
     def add_income(self):
