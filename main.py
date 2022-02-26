@@ -433,6 +433,15 @@ class MainWindow(QMainWindow):
     def loadIncome(self): 
         sql = "SELECT * FROM incomes ORDER BY date DESC"
         self.loadData(sql)
+        self.labelIncome.show()
+        self.labelIncomeType.show()
+        self.income.show()
+        self.incomeType.show()
+        self.buttonAddIncome.show()
+
+        self.labelCost.show()
+        # self.label.
+
 
     def loadExpense(self): 
         sql = "SELECT * FROM costs ORDER BY date DESC"
@@ -442,7 +451,7 @@ class MainWindow(QMainWindow):
         list = get_list(sql)
         count = len(list)
         self.tableWidgetInformation.setRowCount(count)
-        white = QtGui.QBrush(QtGui.QColor("white"))
+        white = QtGui.QBrush(QtGui.QColor("black"))
         for row in range(count): 
             category = QtWidgets.QTableWidgetItem(list[row][2])
             category.setForeground(white)
@@ -563,15 +572,8 @@ class MainWindow(QMainWindow):
     #    adddata=AddData()
     #    widget.addWidget(adddata)
     #    widget.setCurrentIndex(widget.currentIndex()+1)
-    
 
     def add_income(self):
-
-        test = str(datetime.now())
-
-        print(test)
-        return; 
-
 
         self.setWindowTitle("Add income interface")
         #self.count = self.count + 1 # this is incrementing counter
