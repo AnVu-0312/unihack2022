@@ -248,7 +248,7 @@ color: rgb(255, 255, 255);</string>
      <string>Income</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="addcostbutton">
+   <widget class="QPushButton" name="buttonAddCost">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -323,7 +323,7 @@ color: rgb(255, 255, 255);</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="addincomebutton">
+   <widget class="QPushButton" name="buttonAddIncome">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -486,7 +486,7 @@ color: rgb(243, 243, 243);</string>
      <x>0</x>
      <y>0</y>
      <width>551</width>
-     <height>34</height>
+     <height>27</height>
     </rect>
    </property>
    <property name="font">
