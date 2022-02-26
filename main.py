@@ -626,6 +626,11 @@ class MainWindow(QMainWindow):
                 connection.close()
                 #self.showincome=ShowIncome()
                 #self.showincome.show()
+                msg = QMessageBox()
+                msg.setWindowTitle("Done!")
+                my_message = "Income inputted: " + date + " " + income + " " + incometype
+                msg.setText(my_message)
+                x= msg.exec_()
             except ValueError:
                 msg = QMessageBox()
                 msg.setWindowTitle("Failed attempt!")
@@ -642,7 +647,7 @@ class MainWindow(QMainWindow):
                 my_message += " \"Date\" "
             if self.income.text()=="":
                 my_message += " \"Income\" "
-            if self.incometype.text()=="":
+            if self.incometype.currentText()=="":
                 my_message += " \"Income Type\" " 
             msg.setText(my_message)
             x= msg.exec_()     
@@ -681,6 +686,11 @@ class MainWindow(QMainWindow):
                 connection.close()
                 #self.showcost=ShowCost()
                 #self.showcost.show()
+                msg = QMessageBox()
+                msg.setWindowTitle("Done!")
+                my_message = "Expense inputted: " + date + " " + cost + " " + costtype
+                msg.setText(my_message)
+                x= msg.exec_()
             except ValueError:
                 msg = QMessageBox()
                 msg.setWindowTitle("Failed attempt!")
