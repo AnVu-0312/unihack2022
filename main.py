@@ -561,11 +561,120 @@ class MainWindow(QMainWindow):
         widget.addWidget(adddata)
         widget.setCurrentIndex(widget.currentIndex()+1)
     
-    def InputIncome(self):
-        print()
 
-    def InputExpense(self):
-        print()
+    def add_income(self):
+        self.setWindowTitle("Add income interface")
+        self.count = self.count + 1 # this is incrementing counter
+        
+        currentDay = str(datetime.now().day)
+        if len(currentDay)==1:
+            currentDay = '0'+currentDay
+        currentMonth = str(datetime.now().month)
+        if len(currentMonth)==1:
+            currentMonth = '0'+currentMonth
+        currentYear = str(datetime.now().year)
+
+        date = self.date.text()
+        income = self.income.text()
+        incometype = self.incometype.currentText()
+        if self.date.text()!="" and self.income.text()!="":
+            try :
+                getdate = datetime.strptime(date, "%d/%m/%Y")
+                
+                inputDay = str(getdate.day)
+                if len(inputDay)==1:
+                    inputDay = '0'+inputDay
+                inputMonth = str(getdate.month)
+                if len(inputMonth)==1:
+                    inputMonth = '0'+inputMonth
+                inputYear = str(getdate.year)
+                
+                sql_type_date = inputYear + '-' + inputMonth + '-' + inputDay 
+                connection = sqlite3.connect("db\csdl.db")
+                sql = "INSERT INTO incomes(date, income, incometype) VALUES (\'" + sql_type_date + "\', \'" + income + "\', \'" + incometype + "\')"
+                connection.execute(sql)
+                connection.commit()
+                connection.close()
+                #self.showincome=ShowIncome()
+                #self.showincome.show()
+            except ValueError:
+                msg = QMessageBox()
+                msg.setWindowTitle("Failed attempt!")
+                my_message = "Error: Date inputted must be in format dd/mm/yyyy. Current date will be suggested as an example " 
+                msg.setText(my_message)
+                x= msg.exec_()
+                currentDMY = currentDay + '/'+ currentMonth + '/' + currentYear
+                self.date.setText(currentDMY)    
+        else:
+            msg = QMessageBox()
+            msg.setWindowTitle("Failed attempt!")
+            my_message = "Input value for " 
+            if self.date.text()=="":
+                my_message += " \"Date\" "
+            if self.income.text()=="":
+                my_message += " \"Income\" "
+            if self.incometype.text()=="":
+                my_message += " \"Income Type\" " 
+            msg.setText(my_message)
+            x= msg.exec_()     
+    def add_cost(self):
+        self.setWindowTitle("Add cost interface")
+        self.count = self.count + 1 # this is incrementing counter
+        
+        currentDay = str(datetime.now().day)
+        if len(currentDay)==1:
+            currentDay = '0'+currentDay
+        currentMonth = str(datetime.now().month)
+        if len(currentMonth)==1:
+            currentMonth = '0'+currentMonth
+        currentYear = str(datetime.now().year)
+
+        date = self.date.text()
+        cost = self.cost.text()
+        costtype = self.costtype.currentText()
+        if self.date.text()!="" and self.cost.text()!="":
+            try :
+                getdate = datetime.strptime(date, "%d/%m/%Y")
+                
+                inputDay = str(getdate.day)
+                if len(inputDay)==1:
+                    inputDay = '0'+inputDay
+                inputMonth = str(getdate.month)
+                if len(inputMonth)==1:
+                    inputMonth = '0'+inputMonth
+                inputYear = str(getdate.year)
+                
+                sql_type_date = inputYear + '-' + inputMonth + '-' + inputDay 
+                connection = sqlite3.connect("db\csdl.db")
+                sql = "INSERT INTO costs(date, cost, costtype) VALUES (\'" + sql_type_date + "\', \'" + cost + "\', \'" + costtype + "\')"
+                connection.execute(sql)
+                connection.commit()
+                connection.close()
+                #self.showcost=ShowCost()
+                #self.showcost.show()
+            except ValueError:
+                msg = QMessageBox()
+                msg.setWindowTitle("Failed attempt!")
+                my_message = "Error: Date inputted must be in format dd/mm/yyyy. Current date will be suggested as an example " 
+                msg.setText(my_message)
+                x= msg.exec_()
+
+                currentDMY = currentDay + '/'+ currentMonth + '/' + currentYear
+                self.date.setText(currentDMY)    
+
+        else:
+            msg = QMessageBox()
+            msg.setWindowTitle("Failed attempt!")
+            my_message = "Input value for " 
+            if self.date.text()=="":
+                my_message += " \"Date\" "
+            if self.cost.text()=="":
+                my_message += " \"Cost\" "
+            if self.costtype.text()=="":
+                my_message += " \"Cost Type\" " 
+            msg.setText(my_message)
+            x= msg.exec_()    
+
 
     def Input_Expected_Saving(self):
         print()
