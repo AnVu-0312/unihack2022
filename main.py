@@ -627,7 +627,6 @@ class MainWindow(QMainWindow):
                 my_message += " \"Income Type\" " 
             msg.setText(my_message)
             x= msg.exec_()     
-             
     def add_cost(self):
         self.setWindowTitle("Add cost interface")
         self.count = self.count + 1 # this is incrementing counter
@@ -707,6 +706,6 @@ logindialog = Login()
 widget = QtWidgets.QStackedWidget()
 widget.addWidget(logindialog)
 widget.setFixedWidth(600)
-widget.setFixedHeight(1000)
+widget.setFixedHeight(700)
 widget.show()
 app.exec_()
