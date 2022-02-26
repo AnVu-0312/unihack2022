@@ -628,7 +628,7 @@ class MainWindow(QMainWindow):
                 #self.showincome.show()
                 msg = QMessageBox()
                 msg.setWindowTitle("Done!")
-                my_message = "Income inputted: " + date + " " + income + " " + incometype
+                my_message = "Income inputted - Date: " + date + ", Income: " + income + ", Income type: " + incometype
                 msg.setText(my_message)
                 x= msg.exec_()
             except ValueError:
@@ -688,7 +688,7 @@ class MainWindow(QMainWindow):
                 #self.showcost.show()
                 msg = QMessageBox()
                 msg.setWindowTitle("Done!")
-                my_message = "Expense inputted: " + date + " " + cost + " " + costtype
+                my_message = "Expense inputted - Date: " + date + ", Expense: " + cost + ", Expense type: " + costtype
                 msg.setText(my_message)
                 x= msg.exec_()
             except ValueError:
