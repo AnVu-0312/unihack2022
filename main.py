@@ -101,6 +101,9 @@ class MainWindow(QMainWindow):
         self.buttonIncome.clicked.connect(self.loadIncome)
         self.buttonExpense.clicked.connect(self.loadExpense)
         self.loadTableData()
+
+        self.buttonAddIncome.clicked.connect(self.add_income)
+        self.buttonAddCost.clicked.connect(self.add_cost)
     
     def income_bymonth(self):
         def on_pick_bar(event):
