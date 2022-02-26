@@ -592,7 +592,7 @@ color: rgb(243, 243, 243);</string>
    </property>
    <property name="font">
     <font>
-     <pointsize>12</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
   </action>
@@ -602,7 +602,7 @@ color: rgb(243, 243, 243);</string>
    </property>
    <property name="font">
     <font>
-     <pointsize>12</pointsize>
+     <pointsize>8</pointsize>
     </font>
    </property>
   </action>
