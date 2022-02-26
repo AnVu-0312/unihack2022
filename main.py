@@ -89,8 +89,8 @@ class MainWindow(QMainWindow):
 
         self.actionQuit.triggered.connect(self.Quit)
         self.actionImportExcelFile.triggered.connect(self.ImportExcelFile)
-        self.actionInputIncome_2.triggered.connect(self.InputIncome)
-        self.actionInputExpense_2.triggered.connect(self.InputExpense)
+        # self.actionInputIncome_2.triggered.connect(self.InputIncome)
+        # self.actionInputExpense_2.triggered.connect(self.InputExpense)
         self.actionInput_Expected_Saving.triggered.connect(self.Input_Expected_Saving)
         self.actionShowIncomebyMonth.triggered.connect(self.income_bymonth)
         self.actionShowIncomebyType.triggered.connect(self.income_bytype)
@@ -566,6 +566,13 @@ class MainWindow(QMainWindow):
     
 
     def add_income(self):
+
+        test = str(datetime.now())
+
+        print(test)
+        return; 
+
+
         self.setWindowTitle("Add income interface")
         #self.count = self.count + 1 # this is incrementing counter
         
@@ -620,7 +627,6 @@ class MainWindow(QMainWindow):
                 my_message += " \"Income Type\" " 
             msg.setText(my_message)
             x= msg.exec_()     
-             
     def add_cost(self):
         self.setWindowTitle("Add expense interface")
         #self.count = self.count + 1 # this is incrementing counter
@@ -700,6 +706,6 @@ logindialog = Login()
 widget = QtWidgets.QStackedWidget()
 widget.addWidget(logindialog)
 widget.setFixedWidth(600)
-widget.setFixedHeight(550)
+widget.setFixedHeight(700)
 widget.show()
 app.exec_()
