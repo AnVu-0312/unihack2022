@@ -3,6 +3,6 @@ import sys
 
 class Login(QtWidgets.QMainWindow):
     def __init__(self):
-        super(Ui, self).__init__()
-        uic.loadUi('../ui/login/login.ui', self)
+        super(Login, self).__init__()
+        uic.loadUi('login.ui', self)
         self.show()

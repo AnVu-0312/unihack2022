@@ -1,6 +1,8 @@
 from PyQt5 import QtWidgets, uic
+
 import sys
-from 
+sys.path.append("ui/login/form.py") 
+from ui.login.form import Login
 
 
 app = QtWidgets.QApplication(sys.argv)
