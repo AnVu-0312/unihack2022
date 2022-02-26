@@ -1,5 +1,11 @@
+import colorsys
+from ctypes.wintypes import HBRUSH
+import os
 import sys
-from PyQt5 import QtWidgets
+import tkinter
+from tkinter.filedialog import askopenfilename
+from unicodedata import category
+from PyQt5 import QtWidgets, QtGui
 from PyQt5.QtWidgets import QDialog,QApplication,QMainWindow
 from PyQt5.QtWidgets import QTableView,QTableWidget,QTableWidgetItem
 from PyQt5.QtWidgets import QMessageBox
@@ -18,8 +24,9 @@ from tkinter.filedialog import askopenfilename
 import os
 import time
 
-from ui.MainWindow import MainWindow
 
+
+from ui.utilities import get_list
 
 def createConnection():
     con = QSqlDatabase.addDatabase("QSQLITE")
@@ -39,8 +46,6 @@ class Login(QDialog):
         loadUi("ui\login\login.ui",self)
         self.loginbutton.clicked.connect(self.loginfunction)
         self.password.setEchoMode(QtWidgets.QLineEdit.Password)
-        self.createaccbutton.clicked.connect(self.gotocreate)
-        self.forgotpassword.clicked.connect(self.resetpass)
         self.quitbutton.clicked.connect(self.quit_program)
         
     def loginfunction(self):
@@ -71,17 +76,7 @@ class Login(QDialog):
                 msg.setWindowTitle("Failed attempt!")
                 my_message = "Please check your username and password" 
                 msg.setText(my_message)
-                x= msg.exec_()
-
-    def gotocreate(self):
-        createacc=CreateAcc()
-        widget.addWidget(createacc)
-        widget.setCurrentIndex(widget.currentIndex()+1)
-
-    def resetpass(self):
-        resetpass = Resetpass()
-        widget.addWidget(resetpass)
-        widget.setCurrentIndex(widget.currentIndex()+1)
+                x = msg.exec_()
         
     def quit_program(self):        
         sys. exit() 
