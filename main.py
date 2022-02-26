@@ -80,7 +80,7 @@ class MainWindow(QMainWindow):
         super(MainWindow,self).__init__()
         loadUi("ui\main.ui",self)
         self.update()
-        self.actionQuit.triggered.connect(self.quit_program)
+        self.actionQuit.triggered.connect(self.Quit)
         self.actionImportExcelFile.triggered.connect(self.ImportExcelFile)
         self.actionInputIncome_2.triggered.connect(self.InputIncome)
         self.actionInputExpense_2.triggered.connect(self.InputExpense)
@@ -122,7 +122,7 @@ class MainWindow(QMainWindow):
         thisweek_cost = cursor.fetchall()[0][0]
         self.thisweekcostlabel.setText('Costs: -$'+ str(thisweek_cost))
 
-    def import_data(self):
+    def ImportExcelFile(self):
         root = tkinter.Tk()
         root.withdraw() #use to hide tkinter window
 
@@ -195,12 +195,16 @@ class MainWindow(QMainWindow):
         widget.addWidget(adddata)
         widget.setCurrentIndex(widget.currentIndex()+1)
     
-    def analyse_data(self):
-        analysedata=AnalyseData()
-        widget.addWidget(analysedata)
-        widget.setCurrentIndex(widget.currentIndex()+1)
+    def InputIncome(self):
+        print()
 
-    def quit_program(self):        
+    def InputExpense(self):
+        print()
+
+    def Input_Expected_Saving(self):
+        print()
+
+    def Quit(self):        
         sys. exit() 
 
 
