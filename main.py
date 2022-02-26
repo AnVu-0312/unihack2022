@@ -7,4 +7,18 @@ from PyQt5.uic import loadUi
 from PyQt5.QtSql import QSqlDatabase, QSqlQueryModel, QSqlQuery
 import sqlite3 
 
+
+def createConnection():
+    con = QSqlDatabase.addDatabase("QSQLITE")
+    con.setDatabaseName("csdl.db")
+    if not con.open():
+        QMessageBox.critical(
+            None,
+            "QTableView Example - Error!",
+            "Database Error: %s" % con.lastError().databaseText(),
+        )
+        return False
+    return True
+
+
 print("test")
