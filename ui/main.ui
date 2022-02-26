@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>569</width>
+    <width>551</width>
     <height>667</height>
    </rect>
   </property>
@@ -229,8 +229,8 @@ color: rgb(255, 255, 127);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>569</width>
-     <height>27</height>
+     <width>551</width>
+     <height>34</height>
     </rect>
    </property>
    <property name="font">
@@ -269,6 +269,13 @@ color: rgb(255, 255, 127);</string>
     <property name="title">
      <string>Finance Analysis</string>
     </property>
+    <addaction name="actionInput_Expected_Saving"/>
+    <addaction name="separator"/>
+    <addaction name="actionShowIncomebyMonth"/>
+    <addaction name="actionShowIncomebyType"/>
+    <addaction name="actionShowExpensebyMonth"/>
+    <addaction name="actionShowExpensebyType"/>
+    <addaction name="actionShowIncomeExpense"/>
    </widget>
    <addaction name="menuCheckIt"/>
    <addaction name="menuDataManagement"/>
@@ -357,6 +364,36 @@ color: rgb(255, 255, 127);</string>
   <action name="actionInputExpense">
    <property name="text">
     <string>Users</string>
+   </property>
+  </action>
+  <action name="actionInput_Expected_Saving">
+   <property name="text">
+    <string>Input Expected Saving</string>
+   </property>
+  </action>
+  <action name="actionShowIncomebyMonth">
+   <property name="text">
+    <string>Show Income by Month</string>
+   </property>
+  </action>
+  <action name="actionShowIncomebyType">
+   <property name="text">
+    <string>Show Income by Type</string>
+   </property>
+  </action>
+  <action name="actionShowExpensebyMonth">
+   <property name="text">
+    <string>Show Expense by Month</string>
+   </property>
+  </action>
+  <action name="actionShowExpensebyType">
+   <property name="text">
+    <string>Show Expense by Type</string>
+   </property>
+  </action>
+  <action name="actionShowIncomeExpense">
+   <property name="text">
+    <string>Show Income vesus Expense</string>
    </property>
   </action>
  </widget>
