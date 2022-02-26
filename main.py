@@ -436,7 +436,7 @@ class MainWindow(QMainWindow):
         self.labelIncome.show()
         self.labelIncomeType.show()
         self.income.show()
-        self.incomeType.show()
+        self.incometype.show()
         self.buttonAddIncome.show()
 
         self.labelCost.show()
