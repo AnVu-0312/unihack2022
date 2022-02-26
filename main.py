@@ -590,7 +590,7 @@ class MainWindow(QMainWindow):
                 inputYear = str(getdate.year)
                 
                 sql_type_date = inputYear + '-' + inputMonth + '-' + inputDay 
-                connection = sqlite3.connect("csdl.db")
+                connection = sqlite3.connect("db\csdl.db")
                 sql = "INSERT INTO incomes(date, income, incometype) VALUES (\'" + sql_type_date + "\', \'" + income + "\', \'" + incometype + "\')"
                 connection.execute(sql)
                 connection.commit()
@@ -646,7 +646,7 @@ class MainWindow(QMainWindow):
                 inputYear = str(getdate.year)
                 
                 sql_type_date = inputYear + '-' + inputMonth + '-' + inputDay 
-                connection = sqlite3.connect("csdl.db")
+                connection = sqlite3.connect("db\csdl.db")
                 sql = "INSERT INTO costs(date, cost, costtype) VALUES (\'" + sql_type_date + "\', \'" + cost + "\', \'" + costtype + "\')"
                 connection.execute(sql)
                 connection.commit()
