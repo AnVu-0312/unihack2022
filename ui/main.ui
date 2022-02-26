@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>551</width>
+    <width>586</width>
     <height>667</height>
    </rect>
   </property>
@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(54, 54, 54);</string>
+   <string notr="true">background-color: rgb(0,0,0,0);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="thismonthcostlabel">
@@ -28,7 +28,7 @@
     </property>
     <property name="styleSheet">
      <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(255, 255, 127);</string>
+color: rgb(196, 77, 86);</string>
     </property>
     <property name="text">
      <string>1m cost</string>
@@ -45,7 +45,7 @@ color: rgb(255, 255, 127);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(255, 255, 127);</string>
+color: rgb(147, 250, 165);</string>
     </property>
     <property name="text">
      <string>1w income</string>
@@ -62,7 +62,7 @@ color: rgb(255, 255, 127);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(255, 255, 127);</string>
+color: rgb(147, 250, 165);</string>
     </property>
     <property name="text">
      <string>1m income</string>
@@ -79,7 +79,7 @@ color: rgb(255, 255, 127);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(255, 255, 255);</string>
+color: rgba(0, 0, 0,255);</string>
     </property>
     <property name="text">
      <string>Current total balance:</string>
@@ -96,7 +96,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(255, 255, 255);</string>
+color: rgba(0,0,0,255);</string>
     </property>
     <property name="text">
      <string>Last month</string>
@@ -113,7 +113,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(255, 255, 255);</string>
+color: rgba(0,0,0,255);</string>
     </property>
     <property name="text">
      <string>Last week</string>
@@ -130,7 +130,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(255, 255, 127);</string>
+color: rgb(245, 230, 83);</string>
     </property>
     <property name="text">
      <string>Total balance</string>
@@ -147,7 +147,7 @@ color: rgb(255, 255, 127);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(255, 255, 127);</string>
+color: rgb(196, 77, 86);</string>
     </property>
     <property name="text">
      <string>1w cost</string>
@@ -156,10 +156,10 @@ color: rgb(255, 255, 127);</string>
    <widget class="QTableWidget" name="tableWidgetInformation">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>10</x>
       <y>240</y>
-      <width>461</width>
-      <height>192</height>
+      <width>521</width>
+      <height>241</height>
      </rect>
     </property>
     <column>
@@ -197,7 +197,8 @@ color: rgb(255, 255, 127);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: white</string>
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(147, 250, 165), stop:1 rgba(255, 255, 255, 255));
+border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>Income</string>
@@ -216,7 +217,8 @@ color: rgb(255, 255, 127);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255)</string>
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(214, 0, 0), stop:1 rgba(255, 255, 255, 255));
+border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>Expense</string>
@@ -229,8 +231,8 @@ color: rgb(255, 255, 127);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>551</width>
-     <height>34</height>
+     <width>586</width>
+     <height>27</height>
     </rect>
    </property>
    <property name="font">

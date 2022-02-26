@@ -188,13 +188,22 @@ padding-bottom: 7px;</string>
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>260</y>
+      <y>270</y>
       <width>111</width>
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 255, 255);
+     <string notr="true">
 font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
@@ -205,14 +214,14 @@ font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>410</y>
+      <y>330</y>
       <width>111</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(85, 255, 255);
+
 color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
@@ -244,15 +253,13 @@ border-top-left-radius: 50px;
      <bool>true</bool>
     </property>
    </widget>
+   <zorder>label_2</zorder>
    <zorder>label</zorder>
    <zorder>label_5</zorder>
    <zorder>background</zorder>
    <zorder>label_4</zorder>
    <zorder>username</zorder>
    <zorder>password</zorder>
-   <zorder>createaccount</zorder>
-   <zorder>createaccbutton</zorder>
-   <zorder>forgotpassword</zorder>
    <zorder>loginbutton</zorder>
    <zorder>quitbutton</zorder>
   </widget>
