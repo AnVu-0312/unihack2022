@@ -89,8 +89,8 @@ class MainWindow(QMainWindow):
 
         self.actionQuit.triggered.connect(self.Quit)
         self.actionImportExcelFile.triggered.connect(self.ImportExcelFile)
-        self.actionInputIncome_2.triggered.connect(self.InputIncome)
-        self.actionInputExpense_2.triggered.connect(self.InputExpense)
+        # self.actionInputIncome_2.triggered.connect(self.InputIncome)
+        # self.actionInputExpense_2.triggered.connect(self.InputExpense)
         self.actionInput_Expected_Saving.triggered.connect(self.Input_Expected_Saving)
         self.actionShowIncomebyMonth.triggered.connect(self.income_bymonth)
         self.actionShowIncomebyType.triggered.connect(self.income_bytype)
@@ -101,6 +101,9 @@ class MainWindow(QMainWindow):
         self.buttonIncome.clicked.connect(self.loadIncome)
         self.buttonExpense.clicked.connect(self.loadExpense)
         self.loadTableData()
+
+        self.buttonAddIncome.clicked.connect(self.add_income)
+        self.buttonAddCost.clicked.connect(self.add_cost)
     
     def income_bymonth(self):
         def on_pick_bar(event):
@@ -560,12 +563,22 @@ class MainWindow(QMainWindow):
         adddata=AddData()
         widget.addWidget(adddata)
         widget.setCurrentIndex(widget.currentIndex()+1)
+
+    
+
     
 
     def add_income(self):
+
+        test = str(datetime.now())
+
+        print(test)
+        return; 
+
+
         self.setWindowTitle("Add income interface")
         self.count = self.count + 1 # this is incrementing counter
-        
+
         currentDay = str(datetime.now().day)
         if len(currentDay)==1:
             currentDay = '0'+currentDay
@@ -697,6 +710,6 @@ logindialog = Login()
 widget = QtWidgets.QStackedWidget()
 widget.addWidget(logindialog)
 widget.setFixedWidth(600)
-widget.setFixedHeight(550)
+widget.setFixedHeight(1000)
 widget.show()
 app.exec_()
