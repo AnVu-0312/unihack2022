@@ -16,8 +16,8 @@
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>40</y>
+     <x>10</x>
+     <y>20</y>
      <width>550</width>
      <height>500</height>
     </rect>
@@ -260,12 +260,19 @@ color: rgb(0, 0, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgba(0,0,0,80 );
+     <string notr="true">
+background-color:rgba(0,0,0,80 );
 border-top-left-radius: 50px;
 </string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Purple Illustrated Piggy Bank Instagram Story.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <zorder>label</zorder>
