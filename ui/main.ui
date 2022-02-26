@@ -156,7 +156,7 @@ color: rgb(196, 77, 86);</string>
    <widget class="QTableWidget" name="tableWidgetInformation">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>240</y>
       <width>521</width>
       <height>241</height>
@@ -198,7 +198,8 @@ color: rgb(196, 77, 86);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(147, 250, 165), stop:1 rgba(255, 255, 255, 255));
-border-radius: 5px;</string>
+border-radius: 5px;
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>Income</string>
@@ -218,7 +219,8 @@ border-radius: 5px;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(214, 0, 0), stop:1 rgba(255, 255, 255, 255));
-border-radius: 5px;</string>
+border-radius: 5px;
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>Expense</string>
@@ -227,8 +229,8 @@ border-radius: 5px;</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>460</y>
+      <x>50</x>
+      <y>490</y>
       <width>71</width>
       <height>31</height>
      </rect>
@@ -244,7 +246,7 @@ border-radius: 5px;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(255, 255, 255);</string>
+color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>Income</string>
@@ -260,7 +262,8 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 255, 255);
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(214, 0, 0), stop:1 rgba(255, 255, 255, 255));
+border-radius: 5px;
 color: rgb(0, 0, 0);
 font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
@@ -271,15 +274,15 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>460</y>
-      <width>71</width>
+      <x>310</x>
+      <y>490</y>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(255, 255, 255);</string>
+color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>Expense</string>
@@ -288,15 +291,15 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>500</y>
-      <width>51</width>
+      <x>310</x>
+      <y>520</y>
+      <width>91</width>
       <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(255, 255, 255);</string>
+color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>Expense Type</string>
@@ -308,15 +311,15 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>500</y>
+      <x>50</x>
+      <y>520</y>
       <width>81</width>
       <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(255, 255, 255);</string>
+color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>Income Type</string>
@@ -335,7 +338,8 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 255, 255);
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(147, 250, 165), stop:1 rgba(255, 255, 255, 255));
+border-radius: 5px;
 color: rgb(0, 0, 0);
 font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
@@ -346,8 +350,8 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QComboBox" name="costtype">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>510</y>
+      <x>400</x>
+      <y>530</y>
       <width>121</width>
       <height>31</height>
      </rect>
@@ -356,7 +360,7 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Salary&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);
+     <string notr="true">color: rgb(0, 0, 0);
 font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="editable">
@@ -396,8 +400,8 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QComboBox" name="incometype">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>510</y>
+      <x>140</x>
+      <y>530</y>
       <width>121</width>
       <height>31</height>
      </rect>
@@ -406,7 +410,7 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Salary&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);
+     <string notr="true">color: rgb(0, 0, 0);
 font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="editable">
@@ -446,8 +450,8 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QLineEdit" name="cost">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>460</y>
+      <x>400</x>
+      <y>490</y>
       <width>121</width>
       <height>31</height>
      </rect>
@@ -460,8 +464,8 @@ color: rgb(243, 243, 243);</string>
    <widget class="QLineEdit" name="income">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>460</y>
+      <x>140</x>
+      <y>490</y>
       <width>121</width>
       <height>31</height>
      </rect>
