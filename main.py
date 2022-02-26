@@ -595,8 +595,8 @@ class MainWindow(QMainWindow):
                 connection.execute(sql)
                 connection.commit()
                 connection.close()
-                self.showincome=ShowIncome()
-                self.showincome.show()
+                #self.showincome=ShowIncome()
+                #self.showincome.show()
             except ValueError:
                 msg = QMessageBox()
                 msg.setWindowTitle("Failed attempt!")
@@ -651,8 +651,8 @@ class MainWindow(QMainWindow):
                 connection.execute(sql)
                 connection.commit()
                 connection.close()
-                self.showcost=ShowCost()
-                self.showcost.show()
+                #self.showcost=ShowCost()
+                #self.showcost.show()
             except ValueError:
                 msg = QMessageBox()
                 msg.setWindowTitle("Failed attempt!")
