@@ -78,16 +78,16 @@ class Login(QDialog):
 class MainWindow(QMainWindow):    
     def __init__(self):
         super(MainWindow,self).__init__()
-        loadUi("mainwindow.ui",self)
+        loadUi("ui\main.ui",self)
         self.update()
-        self.actionQuit.triggered.connect(self.Quit)
+        self.actionQuit.triggered.connect(self.quit_program)
         self.actionImportExcelFile.triggered.connect(self.ImportExcelFile)
         self.actionInputIncome_2.triggered.connect(self.InputIncome)
         self.actionInputExpense_2.triggered.connect(self.InputExpense)
         self.actionInput_Expected_Saving.triggered.connect(self.Input_Expected_Saving)
     
     def update(self):
-        connection = sqlite3.connect("csdl.db")
+        connection = sqlite3.connect("db\csdl.db")
         
         sql = "select sum(income) from incomes"
         cursor = connection.execute(sql)
