@@ -486,7 +486,7 @@ class MainWindow(QMainWindow):
         cursor = connection.execute(sql)
         thisweek_cost = cursor.fetchall()[0][0]
         self.thisweekcostlabel.setText('Costs: -$'+ str(thisweek_cost))
-        self.compare_incomecost()
+        #self.compare_incomecost()
 
     def ImportExcelFile(self):
         root = tkinter.Tk()
