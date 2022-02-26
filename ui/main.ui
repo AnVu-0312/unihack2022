@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>586</width>
+    <width>575</width>
     <height>788</height>
    </rect>
   </property>
@@ -156,9 +156,9 @@ color: rgb(196, 77, 86);</string>
    <widget class="QTableWidget" name="tableWidgetInformation">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>10</x>
       <y>240</y>
-      <width>521</width>
+      <width>551</width>
       <height>241</height>
      </rect>
     </property>
@@ -460,7 +460,7 @@ background-color: white; </string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(243, 243, 243);</string>
+color: black;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="income">
@@ -483,7 +483,7 @@ color: rgb(243, 243, 243);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(243, 243, 243);</string>
+color: black;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -497,7 +497,7 @@ color: rgb(243, 243, 243);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(255, 255, 255);</string>
+color: black;</string>
     </property>
     <property name="text">
      <string>Date: (dd/mm/yyyy)</string>
@@ -514,7 +514,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(243, 243, 243);</string>
+color: black;</string>
     </property>
    </widget>
   </widget>
@@ -524,7 +524,7 @@ color: rgb(243, 243, 243);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>586</width>
+     <width>575</width>
      <height>27</height>
     </rect>
    </property>
@@ -600,7 +600,7 @@ color: rgb(243, 243, 243);</string>
   </action>
   <action name="actionImportExcelFile">
    <property name="text">
-    <string>ImportExcelFile</string>
+    <string>Import Excel File</string>
    </property>
    <property name="font">
     <font>
