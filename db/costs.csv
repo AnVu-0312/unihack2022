@@ -1,0 +1,511 @@
+date,cost,costtype
+2021-02-18,200,Food/Dining Out
+2021-06-07,20,Medical
+2022-02-20,80,Entertainment
+2021-11-01,80,Others
+2021-02-16,50,Medical
+2022-02-26,70,Internet/Utilities
+2021-06-25,50,Medical
+2021-06-05,20,Internet/Utilities
+2021-09-19,50,Clothing
+2021-02-01,50,Transportation
+2021-03-31,225,Transportation
+2021-12-14,70,Medical
+2021-11-18,100,Others
+2021-12-03,100,Medical
+2021-09-12,100,Clothing
+2021-09-01,40,Internet/Utilities
+2021-01-10,80,Others
+2022-01-05,100,Transportation
+2021-05-16,300,Food/Dining Out
+2021-10-28,60,Entertainment
+2021-08-17,50,Others
+2022-01-17,200,Food/Dining Out
+2021-03-03,100,Housing/Rent
+2021-03-16,10,Medical
+2021-05-01,10,Others
+2021-05-10,10,Others
+2021-06-09,800,Housing/Rent
+2021-07-10,20,Entertainment
+2021-02-03,175,Transportation
+2021-04-16,20,Internet/Utilities
+2021-05-03,100,Clothing
+2021-05-28,40,Internet/Utilities
+2022-02-10,40,Internet/Utilities
+2022-02-17,40,Clothing
+2021-09-04,20,Others
+2022-02-20,90,Internet/Utilities
+2022-01-03,60,Others
+2022-01-17,700,Housing/Rent
+2021-02-14,90,Medical
+2021-08-29,60,Internet/Utilities
+2021-08-16,90,Clothing
+2021-10-22,400,Housing/Rent
+2021-11-30,70,Others
+2021-07-06,40,Others
+2021-10-09,80,Others
+2021-12-08,80,Clothing
+2021-05-05,100,Housing/Rent
+2021-03-10,80,Internet/Utilities
+2021-11-11,70,Clothing
+2021-04-07,10,Medical
+2021-01-26,800,Housing/Rent
+2021-12-30,25,Transportation
+2021-06-28,40,Medical
+2021-07-06,250,Transportation
+2021-07-29,200,Housing/Rent
+2021-01-22,180,Entertainment
+2021-04-30,100,Transportation
+2021-01-07,70,Internet/Utilities
+2021-03-05,200,Entertainment
+2021-06-02,70,Internet/Utilities
+2022-02-20,40,Internet/Utilities
+2021-10-02,100,Housing/Rent
+2021-06-24,100,Transportation
+2022-02-17,20,Clothing
+2021-06-23,100,Clothing
+2021-09-18,80,Others
+2021-01-24,20,Medical
+2021-03-08,50,Clothing
+2021-12-02,100,Others
+2021-05-20,180,Entertainment
+2022-02-01,90,Internet/Utilities
+2022-01-06,80,Internet/Utilities
+2021-09-19,100,Housing/Rent
+2021-02-22,100,Housing/Rent
+2021-11-08,10,Medical
+2021-07-30,100,Entertainment
+2021-07-01,70,Others
+2021-12-17,120,Entertainment
+2021-12-11,250,Food/Dining Out
+2021-09-01,500,Housing/Rent
+2021-03-23,300,Food/Dining Out
+2021-08-07,100,Food/Dining Out
+2021-03-29,80,Medical
+2021-05-29,125,Transportation
+2021-07-14,900,Housing/Rent
+2021-09-03,350,Food/Dining Out
+2021-12-04,200,Food/Dining Out
+2021-12-30,100,Medical
+2021-04-07,60,Clothing
+2021-01-30,250,Transportation
+2021-06-26,50,Food/Dining Out
+2021-03-14,300,Housing/Rent
+2021-02-06,70,Medical
+2022-01-18,400,Housing/Rent
+2021-08-25,90,Clothing
+2021-10-21,40,Others
+2021-07-09,50,Internet/Utilities
+2021-06-20,70,Medical
+2021-05-01,70,Internet/Utilities
+2021-02-05,80,Clothing
+2021-03-01,1000,Housing/Rent
+2021-03-28,100,Food/Dining Out
+2021-11-03,300,Housing/Rent
+2021-11-29,70,Others
+2021-08-28,225,Transportation
+2022-01-13,250,Transportation
+2021-12-20,10,Clothing
+2021-02-08,350,Food/Dining Out
+2021-05-15,1000,Housing/Rent
+2021-07-25,450,Food/Dining Out
+2021-09-01,75,Transportation
+2021-05-18,100,Others
+2022-02-15,30,Medical
+2021-05-26,200,Entertainment
+2022-01-07,70,Others
+2022-01-15,10,Internet/Utilities
+2021-10-31,200,Housing/Rent
+2022-01-08,400,Food/Dining Out
+2022-01-27,80,Entertainment
+2021-09-14,160,Entertainment
+2021-03-04,225,Transportation
+2021-09-22,200,Housing/Rent
+2021-09-19,70,Internet/Utilities
+2021-07-22,10,Medical
+2021-05-09,70,Clothing
+2021-03-01,40,Internet/Utilities
+2021-06-09,10,Medical
+2021-12-26,30,Internet/Utilities
+2021-04-24,50,Medical
+2021-09-05,1000,Housing/Rent
+2021-10-23,900,Housing/Rent
+2021-01-27,90,Clothing
+2021-11-09,250,Transportation
+2021-11-10,60,Medical
+2021-12-07,400,Housing/Rent
+2021-07-31,100,Clothing
+2021-12-04,100,Others
+2021-07-14,50,Food/Dining Out
+2021-10-05,250,Transportation
+2021-05-26,80,Internet/Utilities
+2022-02-03,80,Clothing
+2021-11-09,800,Housing/Rent
+2021-02-22,50,Medical
+2021-03-14,120,Entertainment
+2021-05-16,80,Medical
+2021-12-29,60,Others
+2021-11-09,80,Medical
+2021-04-16,50,Transportation
+2021-08-03,250,Transportation
+2022-02-01,50,Internet/Utilities
+2021-02-07,60,Clothing
+2021-03-19,300,Housing/Rent
+2021-06-23,80,Medical
+2021-08-18,100,Clothing
+2022-02-04,90,Medical
+2021-03-12,50,Transportation
+2021-04-26,140,Entertainment
+2021-03-12,60,Others
+2021-03-07,80,Others
+2021-10-25,90,Others
+2022-01-19,60,Medical
+2021-10-17,10,Clothing
+2021-02-19,350,Food/Dining Out
+2021-08-01,10,Internet/Utilities
+2021-06-26,20,Others
+2022-02-12,200,Food/Dining Out
+2021-06-07,20,Clothing
+2021-11-05,50,Clothing
+2022-01-05,80,Entertainment
+2021-06-13,700,Housing/Rent
+2021-11-08,40,Entertainment
+2021-10-23,250,Food/Dining Out
+2021-04-05,900,Housing/Rent
+2021-11-29,30,Medical
+2022-02-23,100,Others
+2021-05-12,30,Others
+2021-05-22,40,Entertainment
+2021-01-21,40,Others
+2021-01-10,60,Entertainment
+2021-03-08,60,Medical
+2021-04-19,80,Others
+2022-01-31,700,Housing/Rent
+2022-01-26,60,Internet/Utilities
+2021-10-13,50,Medical
+2021-09-16,800,Housing/Rent
+2021-03-25,10,Internet/Utilities
+2021-07-27,50,Food/Dining Out
+2022-02-12,100,Entertainment
+2021-09-13,80,Clothing
+2021-09-26,40,Medical
+2021-03-16,30,Clothing
+2021-10-24,80,Entertainment
+2021-05-28,50,Internet/Utilities
+2022-02-24,40,Entertainment
+2021-08-18,100,Housing/Rent
+2021-11-26,400,Housing/Rent
+2021-06-29,60,Clothing
+2021-02-25,225,Transportation
+2021-04-21,90,Clothing
+2021-03-27,30,Others
+2021-06-10,100,Internet/Utilities
+2022-01-04,100,Housing/Rent
+2021-02-12,600,Housing/Rent
+2021-05-23,100,Internet/Utilities
+2021-07-23,200,Housing/Rent
+2021-12-29,50,Food/Dining Out
+2021-05-30,800,Housing/Rent
+2021-05-03,350,Food/Dining Out
+2022-02-26,60,Others
+2021-07-18,250,Transportation
+2021-05-25,300,Housing/Rent
+2021-04-04,100,Entertainment
+2021-01-18,200,Transportation
+2021-03-21,100,Internet/Utilities
+2021-10-17,75,Transportation
+2021-03-02,40,Clothing
+2021-08-17,50,Clothing
+2021-02-14,10,Medical
+2021-08-10,20,Internet/Utilities
+2021-04-28,100,Internet/Utilities
+2021-09-27,60,Entertainment
+2021-11-17,10,Clothing
+2021-11-08,100,Internet/Utilities
+2021-10-06,800,Housing/Rent
+2021-09-24,40,Clothing
+2021-02-18,60,Medical
+2021-07-11,500,Housing/Rent
+2021-03-25,60,Clothing
+2021-04-18,500,Food/Dining Out
+2021-03-24,100,Transportation
+2021-02-15,225,Transportation
+2021-06-10,70,Internet/Utilities
+2021-12-31,350,Food/Dining Out
+2021-04-09,40,Medical
+2021-03-11,120,Entertainment
+2021-04-19,350,Food/Dining Out
+2022-02-21,140,Entertainment
+2021-12-04,450,Food/Dining Out
+2022-02-05,50,Medical
+2021-04-17,10,Internet/Utilities
+2021-02-18,90,Internet/Utilities
+2021-12-25,80,Clothing
+2021-07-15,160,Entertainment
+2021-10-15,50,Food/Dining Out
+2022-02-21,70,Medical
+2021-10-11,20,Internet/Utilities
+2021-09-23,100,Internet/Utilities
+2021-01-03,200,Entertainment
+2021-05-12,70,Clothing
+2022-01-11,50,Others
+2021-03-01,500,Housing/Rent
+2021-03-09,175,Transportation
+2021-06-16,100,Housing/Rent
+2021-09-02,75,Transportation
+2022-02-09,30,Internet/Utilities
+2021-06-11,80,Entertainment
+2021-08-16,60,Clothing
+2021-02-23,90,Others
+2021-12-22,500,Housing/Rent
+2021-11-06,400,Food/Dining Out
+2021-10-31,10,Clothing
+2021-02-27,25,Transportation
+2021-09-08,30,Others
+2021-10-08,30,Others
+2021-01-31,50,Others
+2021-09-15,225,Transportation
+2021-06-27,300,Food/Dining Out
+2021-11-06,100,Others
+2021-07-03,75,Transportation
+2021-05-15,90,Clothing
+2021-01-06,20,Entertainment
+2021-07-09,20,Internet/Utilities
+2021-05-11,50,Clothing
+2021-02-14,30,Medical
+2021-02-19,30,Clothing
+2021-11-04,350,Food/Dining Out
+2021-12-24,80,Entertainment
+2021-03-06,250,Transportation
+2021-11-30,225,Transportation
+2021-05-19,75,Transportation
+2022-01-20,60,Others
+2021-11-12,140,Entertainment
+2021-02-09,20,Internet/Utilities
+2021-04-23,200,Food/Dining Out
+2021-10-13,20,Clothing
+2022-02-21,175,Transportation
+2021-02-18,10,Others
+2022-02-26,30,Others
+2021-08-04,50,Transportation
+2021-03-10,50,Transportation
+2021-02-17,10,Internet/Utilities
+2021-02-21,60,Internet/Utilities
+2021-02-13,40,Clothing
+2021-02-25,100,Food/Dining Out
+2021-05-02,300,Food/Dining Out
+2021-11-03,70,Others
+2021-04-07,1000,Housing/Rent
+2021-02-26,100,Transportation
+2021-09-20,70,Clothing
+2021-06-26,100,Medical
+2021-11-03,40,Clothing
+2021-01-20,100,Entertainment
+2021-09-02,20,Others
+2022-01-27,100,Others
+2021-11-22,30,Medical
+2021-03-31,60,Internet/Utilities
+2022-01-13,20,Medical
+2022-01-03,40,Entertainment
+2021-02-05,40,Clothing
+2021-07-06,180,Entertainment
+2021-02-16,70,Clothing
+2021-04-11,70,Clothing
+2021-06-28,900,Housing/Rent
+2021-02-16,60,Others
+2021-11-17,120,Entertainment
+2021-03-05,60,Clothing
+2021-10-27,50,Food/Dining Out
+2022-02-11,70,Others
+2021-05-31,30,Medical
+2021-06-02,125,Transportation
+2021-04-25,1000,Housing/Rent
+2021-03-16,350,Food/Dining Out
+2021-06-21,10,Medical
+2021-04-06,120,Entertainment
+2021-12-09,70,Internet/Utilities
+2022-02-06,70,Medical
+2021-08-05,50,Food/Dining Out
+2022-01-13,60,Clothing
+2021-05-30,100,Food/Dining Out
+2021-08-06,90,Internet/Utilities
+2022-02-14,250,Food/Dining Out
+2021-06-16,500,Food/Dining Out
+2022-02-09,40,Internet/Utilities
+2022-01-16,200,Food/Dining Out
+2021-09-17,60,Others
+2021-03-23,300,Food/Dining Out
+2022-02-18,60,Others
+2021-10-30,90,Medical
+2021-08-09,700,Housing/Rent
+2021-05-06,40,Internet/Utilities
+2022-01-29,50,Transportation
+2021-10-23,200,Housing/Rent
+2021-11-28,100,Food/Dining Out
+2021-10-28,30,Others
+2021-01-08,100,Others
+2021-10-18,100,Internet/Utilities
+2021-10-07,90,Medical
+2021-01-24,60,Others
+2021-03-15,500,Food/Dining Out
+2021-03-23,700,Housing/Rent
+2021-06-24,60,Internet/Utilities
+2021-03-15,400,Housing/Rent
+2022-02-11,900,Housing/Rent
+2021-02-14,100,Medical
+2021-02-19,100,Others
+2021-03-16,30,Internet/Utilities
+2021-05-24,90,Others
+2021-05-20,150,Food/Dining Out
+2021-03-11,350,Food/Dining Out
+2022-02-26,20,Internet/Utilities
+2021-07-23,20,Internet/Utilities
+2021-02-26,350,Food/Dining Out
+2021-06-24,10,Internet/Utilities
+2021-04-24,100,Food/Dining Out
+2021-12-29,700,Housing/Rent
+2021-05-26,80,Medical
+2021-01-01,125,Transportation
+2021-05-18,10,Medical
+2021-05-29,60,Internet/Utilities
+2021-07-17,900,Housing/Rent
+2021-04-27,40,Medical
+2022-01-18,70,Medical
+2021-01-13,160,Entertainment
+2022-02-01,70,Medical
+2021-05-17,20,Others
+2021-12-05,50,Internet/Utilities
+2021-04-21,20,Others
+2021-11-10,100,Food/Dining Out
+2021-05-28,200,Food/Dining Out
+2021-02-03,60,Medical
+2021-07-11,30,Clothing
+2021-06-15,150,Food/Dining Out
+2021-04-28,350,Food/Dining Out
+2021-01-20,75,Transportation
+2022-02-03,250,Transportation
+2021-02-21,50,Internet/Utilities
+2022-02-11,60,Internet/Utilities
+2021-01-02,10,Internet/Utilities
+2021-06-12,250,Transportation
+2021-05-04,800,Housing/Rent
+2021-02-01,500,Housing/Rent
+2021-12-08,50,Food/Dining Out
+2021-09-21,800,Housing/Rent
+2021-03-10,70,Internet/Utilities
+2021-09-05,450,Food/Dining Out
+2021-01-10,20,Medical
+2021-04-03,900,Housing/Rent
+2021-07-19,80,Internet/Utilities
+2021-04-02,50,Medical
+2021-09-09,50,Food/Dining Out
+2021-07-18,400,Food/Dining Out
+2021-01-30,100,Transportation
+2021-09-17,500,Food/Dining Out
+2021-01-10,10,Others
+2021-10-23,40,Entertainment
+2021-09-13,80,Clothing
+2021-10-06,600,Housing/Rent
+2021-09-22,60,Entertainment
+2021-10-21,10,Internet/Utilities
+2021-08-08,40,Internet/Utilities
+2021-07-04,30,Internet/Utilities
+2021-07-14,50,Internet/Utilities
+2021-08-16,50,Medical
+2021-11-20,80,Clothing
+2021-08-11,200,Entertainment
+2021-07-15,80,Others
+2021-08-23,100,Others
+2021-02-03,20,Entertainment
+2021-07-11,30,Clothing
+2021-01-08,80,Entertainment
+2021-01-04,100,Internet/Utilities
+2021-11-08,1000,Housing/Rent
+2022-02-10,1000,Housing/Rent
+2021-04-22,20,Medical
+2021-04-01,70,Clothing
+2021-05-14,250,Food/Dining Out
+2021-05-06,80,Internet/Utilities
+2021-06-14,450,Food/Dining Out
+2021-08-23,400,Food/Dining Out
+2021-10-24,70,Others
+2021-09-08,80,Medical
+2021-11-20,90,Internet/Utilities
+2021-04-24,50,Food/Dining Out
+2021-02-14,100,Internet/Utilities
+2021-05-16,50,Medical
+2021-07-03,150,Food/Dining Out
+2021-05-17,80,Entertainment
+2021-07-29,300,Food/Dining Out
+2022-02-25,150,Transportation
+2021-06-04,100,Others
+2021-10-24,90,Clothing
+2021-04-28,30,Others
+2021-05-11,200,Transportation
+2021-08-25,225,Transportation
+2021-06-12,175,Transportation
+2021-11-04,250,Transportation
+2022-02-13,180,Entertainment
+2021-09-17,60,Others
+2021-04-24,250,Transportation
+2021-03-07,140,Entertainment
+2022-01-22,20,Medical
+2021-08-13,350,Food/Dining Out
+2021-07-19,80,Entertainment
+2021-11-15,20,Medical
+2021-02-09,80,Clothing
+2021-01-08,80,Internet/Utilities
+2021-08-01,350,Food/Dining Out
+2021-05-14,100,Food/Dining Out
+2021-03-31,30,Clothing
+2021-08-09,100,Food/Dining Out
+2021-11-12,350,Food/Dining Out
+2021-03-24,90,Others
+2021-04-01,450,Food/Dining Out
+2021-04-03,600,Housing/Rent
+2021-11-01,40,Internet/Utilities
+2021-12-25,50,Food/Dining Out
+2021-10-16,180,Entertainment
+2021-06-27,80,Clothing
+2021-01-01,100,Entertainment
+2021-06-08,40,Clothing
+2021-08-30,300,Food/Dining Out
+2021-06-20,20,Clothing
+2022-01-24,40,Medical
+2021-11-13,100,Housing/Rent
+2021-07-28,30,Internet/Utilities
+2021-01-14,60,Medical
+2021-06-25,900,Housing/Rent
+2022-01-06,40,Entertainment
+2021-10-02,75,Transportation
+2021-06-04,80,Entertainment
+2021-03-19,70,Clothing
+2021-07-11,50,Internet/Utilities
+2021-01-12,70,Medical
+2021-05-29,50,Internet/Utilities
+2021-08-24,60,Entertainment
+2021-02-02,100,Food/Dining Out
+2021-07-12,140,Entertainment
+2021-02-21,90,Medical
+2021-08-11,800,Housing/Rent
+2021-08-09,400,Housing/Rent
+2021-04-08,80,Entertainment
+2021-12-11,25,Transportation
+2022-01-19,70,Internet/Utilities
+2021-08-08,300,Housing/Rent
+2021-05-05,30,Internet/Utilities
+2021-07-16,50,Food/Dining Out
+2021-01-27,80,Clothing
+2021-04-15,250,Food/Dining Out
+2021-01-01,100,Transportation
+2021-02-05,50,Food/Dining Out
+2022-01-05,30,Internet/Utilities
+2022-02-05,40,Others
+2022-01-24,10,Others
+2022-02-15,250,Food/Dining Out
+2022-01-16,100,Clothing
+2022-02-03,50,Medical
+2022-02-19,350,Food/Dining Out
+2022-01-26,100,Others
+2022-01-08,600,Housing/Rent
+2022-02-03,450,Food/Dining Out

@@ -117,7 +117,7 @@ class MainWindow(QMainWindow):
             self.income_bytype_1month(income_month_to_analyse)
 
         connection = sqlite3.connect("db\csdl.db")
-        sql = "SELECT strftime('%m',date)||'-'||substr(strftime('%Y',date),3,2), SUM(income) FROM incomes GROUP BY strftime('%m-%Y',date) ORDER BY strftime('%Y',date), strftime('%m',date) "
+        sql = "SELECT strftime('%m',date)||'-'||substr(strftime('%Y',date),3,2), SUM(income) FROM incomes where incometype is not NULL GROUP BY strftime('%m-%Y',date) ORDER BY strftime('%Y',date), strftime('%m',date) "
         cursor = connection.execute(sql)
         # x-coordinates of left sides of bars
         left = []
@@ -166,7 +166,7 @@ class MainWindow(QMainWindow):
         fig.autofmt_xdate(rotation=(min(90,index/12*45)))
         ax = fig.add_axes([0.1,0.1,0.8,0.8])
         ax.bar(left, income_values, tick_label = income_labels, width = 0.8, color = ['red', 'green'], picker = True) 
-        ax.set_title('Income over months of the activity '+income_type_to_analyse+ '\n(Close this window to return to the analysis of Income by type)')
+        ax.set_title('Income over months of the source '+income_type_to_analyse+ '\n(Close this window to return to the analysis of Income by type)')
         ax.set_xlabel('Months')
         ax.set_ylabel('Income')
 
@@ -182,12 +182,12 @@ class MainWindow(QMainWindow):
                     fig = plt.gcf()
                     ax = fig.gca()
                     ax.add_patch(circle1)
-                    plt.gca().set_title("Income from different activities!\n(You have just chosen to further analyse this activity: "+ income_type_to_analyse+")")
+                    plt.gca().set_title("Income from different sources!\n(You have just chosen to further analyse this activity: "+ income_type_to_analyse+")")
                     self.income_bymonth_1type(income_type_to_analyse) 
         
         connection = sqlite3.connect("db\csdl.db")
         #defining portions and labels covered
-        sql = "SELECT SUM(income), incometype FROM incomes GROUP BY incometype ORDER BY SUM(income) DESC"
+        sql = "SELECT SUM(income), incometype FROM incomes where incometype is not NULL GROUP BY incometype ORDER BY SUM(income) DESC "
         cursor = connection.execute(sql)
         slices = []
         types = []
@@ -199,7 +199,7 @@ class MainWindow(QMainWindow):
         plt.ion()
         fig = plt.figure(figsize=(10,8))
         ax = fig.add_axes([0.1,0.1,0.8,0.8])
-        ax.set_title('Income from different activities!\nClick on an activity to further analyse the income of that activity by month.')
+        ax.set_title('Income from different sources!\nClick on an source to further analyse the income of that source by month.')
         explode_list = []
         start_value = 0
         for i in range(0,len(slices)):
@@ -229,7 +229,7 @@ class MainWindow(QMainWindow):
         plt.ion()
         fig = plt.figure(figsize=(10,8))
         ax = fig.add_axes([0.1,0.1,0.8,0.8])
-        ax.set_title('Income from different activities of the month '+str(income_month_to_analyse)+ '\n(Close this window to return to the analysis of Income over months)')
+        ax.set_title('Income from different sources of the month '+str(income_month_to_analyse)+ '\n(Close this window to return to the analysis of Income over months)')
         explode_list = []
         start_value = 0
         for i in range(0,len(slices)):
@@ -245,7 +245,7 @@ class MainWindow(QMainWindow):
             ax.add_patch(circle1)
             cost_index_to_analyse = int(round(event.artist.xy[0]))-1
             cost_month_to_analyse = cost_labels[cost_index_to_analyse]
-            plt.gca().set_title("Costs over months!\n(You have just chosen to further analyse this month: "+ cost_month_to_analyse+")")
+            plt.gca().set_title("Expense over months!\n(You have just chosen to further analyse this month: "+ cost_month_to_analyse+")")
             self.cost_bytype_1month(cost_month_to_analyse)
 
         connection = sqlite3.connect("db\csdl.db")
@@ -270,7 +270,7 @@ class MainWindow(QMainWindow):
         fig.autofmt_xdate(rotation=(min(90,index/12*45)))
         ax = fig.add_axes([0.1,0.1,0.8,0.8])
         ax.bar(left, cost_values, tick_label = cost_labels, width = 0.8, color = ['red', 'green'], picker = True) 
-        ax.set_title('Costs over months!\nClick on a month to further analyse the cost of that month by type.')
+        ax.set_title('Expense over months!\nClick on a month to further analyse the expense of that month by type.')
         ax.set_xlabel('Months')
         ax.set_ylabel('Cost')
         fig.canvas.callbacks.connect('pick_event',on_pick_bar)
@@ -298,7 +298,7 @@ class MainWindow(QMainWindow):
         fig.autofmt_xdate(rotation=(min(90,index/12*45)))
         ax = fig.add_axes([0.1,0.1,0.8,0.8])
         ax.bar(left, cost_values, tick_label = cost_labels, width = 0.8, color = ['red', 'green'], picker = True) 
-        ax.set_title('Cost over months of the activity '+cost_type_to_analyse+ '\n(Close this window to return to the analysis of Costs by type)')
+        ax.set_title('Expense over months of the activity '+cost_type_to_analyse+ '\n(Close this window to return to the analysis of Expense by type)')
         ax.set_xlabel('Months')
         ax.set_ylabel('Cost')
 
@@ -314,7 +314,7 @@ class MainWindow(QMainWindow):
                     fig = plt.gcf()
                     ax = fig.gca()
                     ax.add_patch(circle1)
-                    plt.gca().set_title("Costs from different activities!\n(You have just chosen to further analyse this activity: "+ cost_type_to_analyse+")")
+                    plt.gca().set_title("Expense of different activities!\n(You have just chosen to further analyse this activity: "+ cost_type_to_analyse+")")
                     self.cost_bymonth_1type(cost_type_to_analyse) 
         
         connection = sqlite3.connect("db\csdl.db")
@@ -331,7 +331,7 @@ class MainWindow(QMainWindow):
         plt.ion()
         fig = plt.figure(figsize=(10,8))
         ax = fig.add_axes([0.1,0.1,0.8,0.8])
-        ax.set_title('Costs from different activities!\nClick on an activity to further analyse the cost of that activity by month.')
+        ax.set_title('Expense of different activities!\nClick on an activity to further analyse the expense of that activity by month.')
         explode_list = []
         start_value = 0
         for i in range(0,len(slices)):
@@ -361,7 +361,7 @@ class MainWindow(QMainWindow):
         plt.ion()
         fig = plt.figure(figsize=(10,8))
         ax = fig.add_axes([0.1,0.1,0.8,0.8])
-        ax.set_title('Cost from different activities of the month '+str(cost_month_to_analyse)+ '\n(Close this window to return to the analysis of Costs over months)')
+        ax.set_title('Expense of different activities of the month '+str(cost_month_to_analyse)+ '\n(Close this window to return to the analysis of Expense over months)')
         explode_list = []
         start_value = 0
         for i in range(0,len(slices)):
