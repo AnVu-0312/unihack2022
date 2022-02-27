@@ -272,7 +272,7 @@ class MainWindow(QMainWindow):
         ax.bar(left, cost_values, tick_label = cost_labels, width = 0.8, color = ['red', 'green'], picker = True) 
         ax.set_title('Expense over months!\nClick on a month to further analyse the expense of that month by type.')
         ax.set_xlabel('Months')
-        ax.set_ylabel('Cost')
+        ax.set_ylabel('Expense')
         fig.canvas.callbacks.connect('pick_event',on_pick_bar)
 
     def cost_bymonth_1type(self, cost_type_to_analyse):
@@ -300,7 +300,7 @@ class MainWindow(QMainWindow):
         ax.bar(left, cost_values, tick_label = cost_labels, width = 0.8, color = ['red', 'green'], picker = True) 
         ax.set_title('Expense over months of the activity '+cost_type_to_analyse+ '\n(Close this window to return to the analysis of Expense by type)')
         ax.set_xlabel('Months')
-        ax.set_ylabel('Cost')
+        ax.set_ylabel('Expense')
 
     def cost_bytype(self):
         def on_pick_slide(event):
@@ -410,11 +410,11 @@ class MainWindow(QMainWindow):
                 if  comparion_index[i]== cost_index[k]:
                     comparion_cost[i] = cost_values[k]
                     comparion_label[i] = cost_labels[k]
-        plotdata = pd.DataFrame({'Income': comparion_income, 'Cost': comparion_cost})    
+        plotdata = pd.DataFrame({'Income': comparion_income, 'Expense': comparion_cost})    
         plotdata.plot(kind="bar")
-        plt.title("Income versus Cost")
+        plt.title("Income versus Expense")
         plt.xlabel("Months")
-        plt.ylabel("Income/Cost values")
+        plt.ylabel("Income/Expense values")
         plt.xticks(ticks = plt_index, labels=comparion_label, rotation=(min(90,len(comparion_index)/12*45)))
         
         # showing the plot 
