@@ -45,7 +45,7 @@ color: rgb(196, 77, 86);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(147, 250, 165);</string>
+color: rgb(30, 130, 76);</string>
     </property>
     <property name="text">
      <string>1w income</string>
@@ -62,7 +62,7 @@ color: rgb(147, 250, 165);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(147, 250, 165);</string>
+color: rgb(30, 130, 76);</string>
     </property>
     <property name="text">
      <string>1m income</string>
@@ -82,7 +82,7 @@ color: rgb(147, 250, 165);</string>
 color: rgba(0, 0, 0,255);</string>
     </property>
     <property name="text">
-     <string>Current total balance:</string>
+     <string>Current savings:</string>
     </property>
    </widget>
    <widget class="QLabel" name="thismonthlabel">
@@ -130,7 +130,7 @@ color: rgba(0,0,0,255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(245, 230, 83);</string>
+color: rgb(247, 202, 24);</string>
     </property>
     <property name="text">
      <string>Total balance</string>
@@ -156,15 +156,26 @@ color: rgb(196, 77, 86);</string>
    <widget class="QTableWidget" name="tableWidgetInformation">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>240</y>
-      <width>551</width>
+      <x>80</x>
+      <y>250</y>
+      <width>411</width>
       <height>241</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
     </property>
     <column>
      <property name="text">
       <string>Date</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Sans Serif</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="textAlignment">
       <set>AlignCenter</set>
@@ -174,6 +185,14 @@ color: rgb(196, 77, 86);</string>
      <property name="text">
       <string>Category</string>
      </property>
+     <property name="font">
+      <font>
+       <family>MS Sans Serif</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="textAlignment">
       <set>AlignCenter</set>
      </property>
@@ -181,6 +200,14 @@ color: rgb(196, 77, 86);</string>
     <column>
      <property name="text">
       <string>Amount</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Sans Serif</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="textAlignment">
       <set>AlignCenter</set>
@@ -229,7 +256,7 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QLabel" name="labelIncome">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>60</x>
       <y>560</y>
       <width>71</width>
       <height>31</height>
@@ -255,7 +282,7 @@ color: rgb(0, 0, 0);</string>
    <widget class="QPushButton" name="buttonAddCost">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>390</x>
       <y>650</y>
       <width>111</width>
       <height>31</height>
@@ -274,7 +301,7 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QLabel" name="labelCost">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>320</x>
       <y>560</y>
       <width>81</width>
       <height>31</height>
@@ -291,7 +318,7 @@ color: rgb(0, 0, 0);</string>
    <widget class="QLabel" name="labelCostType">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>320</x>
       <y>590</y>
       <width>91</width>
       <height>51</height>
@@ -311,7 +338,7 @@ color: rgb(0, 0, 0);</string>
    <widget class="QLabel" name="labelIncomeType">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>60</x>
       <y>590</y>
       <width>81</width>
       <height>51</height>
@@ -331,7 +358,7 @@ color: rgb(0, 0, 0);</string>
    <widget class="QPushButton" name="buttonAddIncome">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>160</x>
       <y>650</y>
       <width>111</width>
       <height>31</height>
@@ -350,7 +377,7 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QComboBox" name="costtype">
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>410</x>
       <y>600</y>
       <width>121</width>
       <height>31</height>
@@ -401,7 +428,7 @@ background-color: white;</string>
    <widget class="QComboBox" name="incometype">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>150</x>
       <y>600</y>
       <width>121</width>
       <height>31</height>
@@ -452,7 +479,7 @@ background-color: white; </string>
    <widget class="QLineEdit" name="cost">
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>410</x>
       <y>560</y>
       <width>121</width>
       <height>31</height>
@@ -466,7 +493,7 @@ color: black;</string>
    <widget class="QLineEdit" name="income">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>150</x>
       <y>560</y>
       <width>121</width>
       <height>31</height>
@@ -489,7 +516,7 @@ color: black;</string>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>100</x>
       <y>510</y>
       <width>191</width>
       <height>31</height>
@@ -506,7 +533,7 @@ color: black;</string>
    <widget class="QLineEdit" name="date">
     <property name="geometry">
      <rect>
-      <x>300</x>
+      <x>310</x>
       <y>510</y>
       <width>131</width>
       <height>31</height>
